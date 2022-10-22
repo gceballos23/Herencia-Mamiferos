@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var mamifero_1 = require("./mamifero");
+var herbivoro_1 = require("./herbivoro");
+var carnivoro_1 = require("./carnivoro");
+var omnivoro_1 = require("./omnivoro");
+var ejemploMamifero = new mamifero_1.Mamifero(4, false, 120);
+var tigre = new carnivoro_1.Carnivoro(6, true, 600);
+var hombre = new omnivoro_1.Omnivoro(2, true, 85);
+var elefante = new herbivoro_1.Herbivoro(4, false, 2500);
+console.log("Mamifero - metodo comer- Mamifero");
+ejemploMamifero.comer();
+console.log("Tigre - metodo comer- Tigre");
+tigre.comer();
+console.log("Hombre - metodo comer- Hombre");
+hombre.comer();
+console.log("Elefante - metodo comer- Elefante");
+elefante.comer();
