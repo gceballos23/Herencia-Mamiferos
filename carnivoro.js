@@ -19,8 +19,8 @@ exports.Carnivoro = void 0;
 var mamifero_1 = require("./mamifero");
 var Carnivoro = /** @class */ (function (_super) {
     __extends(Carnivoro, _super);
-    function Carnivoro() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Carnivoro(pGlandulasMamarias, pPelo, pPeso) {
+        return _super.call(this, pGlandulasMamarias, pPelo, pPeso) || this;
     }
     Carnivoro.prototype.comer = function () {
         console.log("comer carne");
