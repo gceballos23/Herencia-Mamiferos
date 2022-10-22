@@ -19,8 +19,8 @@ exports.Herbivoro = void 0;
 var mamifero_1 = require("./mamifero");
 var Herbivoro = /** @class */ (function (_super) {
     __extends(Herbivoro, _super);
-    function Herbivoro() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Herbivoro(pGlandulasMamarias, pPelo, pPeso) {
+        return _super.call(this, pGlandulasMamarias, pPelo, pPeso) || this;
     }
     Herbivoro.prototype.comer = function () {
         console.log("comer plantas/frutos");

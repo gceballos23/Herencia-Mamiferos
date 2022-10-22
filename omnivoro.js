@@ -19,8 +19,8 @@ exports.Omnivoro = void 0;
 var mamifero_1 = require("./mamifero");
 var Omnivoro = /** @class */ (function (_super) {
     __extends(Omnivoro, _super);
-    function Omnivoro() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Omnivoro(pGlandulasMamarias, pPelo, pPeso) {
+        return _super.call(this, pGlandulasMamarias, pPelo, pPeso) || this;
     }
     Omnivoro.prototype.comer = function () {
         console.log("comer carne/plantas");
